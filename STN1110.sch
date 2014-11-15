@@ -35,10 +35,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
-Title ""
-Date ""
-Rev ""
+Sheet 2 5
+Title "GEM"
+Date "Saturday, November 15, 2014"
+Rev "1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -289,10 +289,10 @@ Wire Wire Line
 Text Notes 9600 3250 2    60   ~ 0
 Jumper reset non-volatile memory
 $Comp
-L CP1 10u/ESR<5
+L CP1 10u/ESR<1
 U 1 1 545FDE8D
 P 7500 3950
-F 0 "10u/ESR<5" H 7550 4050 50  0000 L CNN
+F 0 "10u/ESR<1" H 7550 4050 50  0000 L CNN
 F 1 "CP1" H 7550 3850 50  0000 L CNN
 F 2 "" H 7500 3950 60  0000 C CNN
 F 3 "" H 7500 3950 60  0000 C CNN

@@ -35,24 +35,16 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 1 5
+Title "GEM"
+Date "Saturday, November 15, 2014"
+Rev "1"
+Comp "UCF Senior Design Group 8"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 10700 7650 2    60   ~ 0
-0.1
-Text Notes 8800 7500 2    60   ~ 0
-OBD-II INTERPRETER INTERFACE
-Text Notes 7350 7250 2    60   ~ 0
-1
-Text Notes 8550 7650 2    60   ~ 0
-11/9/14
 $Sheet
 S 1300 1700 2000 1400
 U 545FD699
@@ -125,4 +117,27 @@ Wire Wire Line
 	3300 2350 3950 2350
 Wire Wire Line
 	3300 2450 3950 2450
+$Sheet
+S 1200 5500 1700 1950
+U 5467BC13
+F0 "TRANSCEIVERS" 60
+F1 "transceivers.sch" 60
+F2 "BAT" B L 1200 7250 60 
+F3 "GND" I R 2900 7250 60 
+F4 "~ISO_K_TX" I R 2900 7100 60 
+F5 "K-LINE" O R 2900 6950 60 
+F6 "L-LINE" I R 2900 6800 60 
+F7 "~ISO_L_TX" I R 2900 6650 60 
+F8 "BAT_SW" I R 2900 6500 60 
+F9 "~ISO_RX" I R 2900 6350 60 
+F10 "3.3V" I R 2900 6200 60 
+F11 "PWM/~VPW" I R 2900 6050 60 
+F12 "J1850_BUS+_TX" I R 2900 5850 60 
+F13 "J1850_BUS+" O R 2900 5700 60 
+F14 "J1850_BUS-" I L 1200 7100 60 
+F15 "PWM_RX" O L 1200 6900 60 
+F16 "5V_SW" I L 1200 6750 60 
+F17 "~VPW_RX" O L 1200 6550 60 
+F18 "~J1850_BUS-_TX" I L 1200 6400 60 
+$EndSheet
 $EndSCHEMATC
