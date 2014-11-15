@@ -1,4 +1,4 @@
-update=11/15/2014 9:54:20 AM
+update=11/15/2014 2:28:25 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -65,7 +65,7 @@ version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=../My Contributions/Schematics/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
