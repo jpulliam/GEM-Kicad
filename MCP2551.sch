@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 7
 Title "GEM"
 Date "Saturday, November 15, 2014"
 Rev "1"
@@ -56,9 +56,9 @@ F 3 "" H 4100 3200 60  0000 C CNN
 	1    4100 3200
 	1    0    0    -1  
 $EndComp
-Text HLabel 3650 3100 0    60   Input ~ 0
+Text HLabel 3500 3100 0    60   Input ~ 0
 CAN_TX
-Text HLabel 3650 3200 0    60   Output ~ 0
+Text HLabel 3500 3200 0    60   Output ~ 0
 CAN_RX
 $Comp
 L R R8
@@ -176,4 +176,9 @@ Connection ~ 5100 3100
 Wire Wire Line
 	5550 3500 5550 3200
 Connection ~ 5550 3200
+NoConn ~ 4600 3350
+Wire Wire Line
+	3650 3100 3500 3100
+Wire Wire Line
+	3500 3200 3650 3200
 $EndSCHEMATC

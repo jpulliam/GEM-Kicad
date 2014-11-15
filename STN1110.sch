@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 7
 Title "GEM"
 Date "Saturday, November 15, 2014"
 Rev "1"
@@ -143,17 +143,6 @@ F 2 "" V 6880 1650 30  0000 C CNN
 F 3 "" H 6950 1650 30  0000 C CNN
 	1    6950 1650
 	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR1
-U 1 1 545FDE87
-P 6950 2500
-F 0 "#PWR1" H 6950 2500 30  0001 C CNN
-F 1 "GND" H 6950 2430 30  0001 C CNN
-F 2 "" H 6950 2500 60  0000 C CNN
-F 3 "" H 6950 2500 60  0000 C CNN
-	1    6950 2500
-	1    0    0    -1  
 $EndComp
 $Comp
 L R R6
@@ -300,10 +289,10 @@ F 3 "" H 7500 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR2
+L GND #PWR01
 U 1 1 545FDE8E
 P 7500 4250
-F 0 "#PWR2" H 7500 4250 30  0001 C CNN
+F 0 "#PWR01" H 7500 4250 30  0001 C CNN
 F 1 "GND" H 7500 4180 30  0001 C CNN
 F 2 "" H 7500 4250 60  0000 C CNN
 F 3 "" H 7500 4250 60  0000 C CNN
@@ -460,4 +449,6 @@ Text HLabel 6950 1300 1    60   BiDi Italic 12
 3.3V
 Text HLabel 4000 1550 1    60   BiDi Italic 12
 3.3V
+Text HLabel 6950 2500 3    60   Input ~ 0
+GND
 $EndSCHEMATC

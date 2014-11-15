@@ -35,7 +35,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -123,25 +123,10 @@ Text HLabel 2350 3200 1    60   BiDi ~ 0
 BAT
 Text HLabel 2350 4700 3    60   Input ~ 0
 GND
-Text HLabel 2550 4000 2    60   Input ~ 0
+Text HLabel 2550 4000 2    60   Output ~ 0
 L-LINE
 Text HLabel 1300 4350 0    60   Input ~ 0
 ~ISO_L_TX
-$Comp
-L LM339 U3
-U 1 1 5467DDC4
-P 2850 6600
-F 0 "U3" H 2900 6800 60  0000 C CNN
-F 1 "LM339" H 2950 6400 50  0000 C CNN
-F 2 "" H 2850 6600 60  0000 C CNN
-F 3 "" H 2850 6600 60  0000 C CNN
-	1    2850 6600
-	1    0    0    -1  
-$EndComp
-Text HLabel 2750 6200 1    60   Input ~ 0
-BAT_SW
-Text HLabel 2750 7000 3    60   Input ~ 0
-GND
 $Comp
 L R R19
 U 1 1 5467DEDD
@@ -179,7 +164,7 @@ Text HLabel 1100 5700 1    60   Input ~ 0
 BAT_SW
 Text HLabel 1700 6700 0    60   Input ~ 0
 K-LINE
-Text HLabel 3350 6600 2    60   Input ~ 0
+Text HLabel 3350 6600 2    60   Output ~ 0
 ~ISO_RX
 $Comp
 L R R22
@@ -279,7 +264,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 2250 2350 2400
 Wire Wire Line
-	2350 1850 2350 1550
+	2350 1550 2350 1850
 Wire Wire Line
 	2350 1050 2350 900 
 Wire Wire Line
@@ -292,7 +277,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 4550 2350 4700
 Wire Wire Line
-	2350 4150 2350 3850
+	2350 3850 2350 4150
 Wire Wire Line
 	2350 3350 2350 3200
 Wire Wire Line
@@ -311,10 +296,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 6500 1100 6500
 Connection ~ 1100 6500
-Wire Wire Line
-	2750 6200 2750 6300
-Wire Wire Line
-	2750 6900 2750 7000
 Wire Wire Line
 	3200 6600 3350 6600
 Wire Wire Line
@@ -527,10 +508,6 @@ Text HLabel 8650 1550 0    60   Input ~ 0
 J1850_BUS+
 Text HLabel 8650 1750 0    60   Input ~ 0
 J1850_BUS-
-Text HLabel 9700 2050 3    60   Input ~ 0
-GND
-Text HLabel 9700 1250 1    60   Input ~ 0
-BAT_SW
 Text HLabel 10400 1650 2    60   Output ~ 0
 PWM_RX
 $Comp
@@ -555,33 +532,10 @@ Wire Wire Line
 Wire Wire Line
 	9300 1750 9450 1750
 Wire Wire Line
-	9700 1350 9700 1250
-Wire Wire Line
 	10150 1650 10400 1650
 Wire Wire Line
 	10300 1550 10300 1650
 Connection ~ 10300 1650
-Wire Wire Line
-	9700 2050 9700 1950
-$Comp
-L LM339 U3
-U 3 1 5468414C
-P 9800 3250
-F 0 "U3" H 9850 3450 60  0000 C CNN
-F 1 "LM339" H 9900 3050 50  0000 C CNN
-F 2 "" H 9800 3250 60  0000 C CNN
-F 3 "" H 9800 3250 60  0000 C CNN
-	3    9800 3250
-	1    0    0    -1  
-$EndComp
-Text HLabel 9700 2850 1    60   Input ~ 0
-BAT_SW
-Text HLabel 9700 3650 3    60   Input ~ 0
-GND
-Wire Wire Line
-	9700 2850 9700 2950
-Wire Wire Line
-	9700 3550 9700 3650
 $Comp
 L R R36
 U 1 1 5468497E
@@ -635,7 +589,7 @@ $EndComp
 Text HLabel 10350 3250 2    60   Output ~ 0
 ~VPW_RX
 Wire Wire Line
-	10350 3250 10150 3250
+	10150 3250 10350 3250
 Wire Wire Line
 	10250 3150 10250 3250
 Connection ~ 10250 3250
@@ -713,9 +667,63 @@ Wire Wire Line
 Wire Wire Line
 	6400 7000 6400 6850
 Wire Wire Line
-	6400 6450 6400 6300
+	6400 6300 6400 6450
 Wire Wire Line
 	6400 5800 6400 5700
 Wire Wire Line
 	6400 5300 6400 5200
+Text HLabel 6600 6400 2    60   Output ~ 0
+J1850_BUS-
+Wire Wire Line
+	6600 6400 6400 6400
+Connection ~ 6400 6400
+Wire Wire Line
+	10300 950  10300 1050
+$Comp
+L LM339 U3
+U 1 1 547495FC
+P 2850 6600
+F 0 "U3" H 2900 6800 60  0000 C CNN
+F 1 "LM339" H 2950 6400 50  0000 C CNN
+F 2 "" H 2850 6600 60  0000 C CNN
+F 3 "" H 2850 6600 60  0000 C CNN
+	1    2850 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM339 U3
+U 3 1 546A1BA7
+P 9800 3250
+F 0 "U3" H 9850 3450 60  0000 C CNN
+F 1 "LM339" H 9900 3050 50  0000 C CNN
+F 2 "" H 9800 3250 60  0000 C CNN
+F 3 "" H 9800 3250 60  0000 C CNN
+	3    9800 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 7850 3850
+Wire Wire Line
+	9700 1350 9700 1250
+Text HLabel 9700 1250 1    60   Input ~ 0
+BAT_SW
+Wire Wire Line
+	9700 2050 9700 1950
+Text HLabel 9700 2050 3    60   Input ~ 0
+GND
+Wire Wire Line
+	2750 7050 2750 6900
+Text HLabel 2750 7050 3    60   Input ~ 0
+GND
+Text HLabel 9700 2800 1    60   Input ~ 0
+BAT_SW
+Text HLabel 9700 3650 3    60   Input ~ 0
+GND
+Wire Wire Line
+	9700 3650 9700 3550
+Wire Wire Line
+	9700 2950 9700 2800
+Text HLabel 2750 6200 1    60   Input ~ 0
+BAT_SW
+Wire Wire Line
+	2750 6200 2750 6300
 $EndSCHEMATC
