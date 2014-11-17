@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 8 10
 Title ""
 Date ""
 Rev ""
@@ -77,12 +77,48 @@ Wire Wire Line
 Wire Wire Line
 	4850 2500 4750 2500
 Connection ~ 4750 2500
-Text HLabel 6150 5800 3    60   Output ~ 0
+Text HLabel 6150 5800 3    60   BiDi ~ 0
 UART_TX
 Wire Wire Line
 	6150 5800 6150 5200
-Text HLabel 7350 4700 2    60   Input ~ 0
+Text HLabel 7350 4700 2    60   BiDi ~ 0
 UART_RX
 Wire Wire Line
 	7350 4700 6650 4700
+Text HLabel 7350 4600 2    60   BiDi ~ 0
+UART_TX_BT
+Wire Wire Line
+	6650 4600 7350 4600
+Text HLabel 7350 4500 2    60   BiDi ~ 0
+UART_RX_BT
+Wire Wire Line
+	7350 4500 6650 4500
+Text HLabel 5050 2500 1    60   Output ~ 0
+WAKE_SW
+Wire Wire Line
+	5050 2700 5050 2500
+Text HLabel 4950 2500 1    60   Output ~ 0
+CMD
+Wire Wire Line
+	4950 2700 4950 2500
+Text HLabel 3600 3300 0    60   Output ~ 0
+WAKE_HW
+Wire Wire Line
+	4150 3300 3600 3300
+Text HLabel 3600 3400 0    60   Output ~ 0
+SPI/PIO
+Wire Wire Line
+	4150 3400 3600 3400
+Text HLabel 7350 3500 2    60   BiDi ~ 0
+SPI_SIMO
+Wire Wire Line
+	7350 3500 6650 3500
+Text HLabel 7350 3400 2    60   BiDi ~ 0
+SPI_SOMI
+Wire Wire Line
+	7350 3400 6650 3400
+Text HLabel 7350 3300 2    60   3State ~ 0
+SPI_CLK
+Wire Wire Line
+	7350 3300 6650 3300
 $EndSCHEMATC

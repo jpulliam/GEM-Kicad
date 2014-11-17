@@ -5,6 +5,10 @@ D CAN Transceiver
 F Datasheets/MCP2551.pdf
 $ENDCMP
 #
+$CMP RN4020
+D Bluetooth Module
+$ENDCMP
+#
 $CMP STN1110
 D OBD-II to Serial Interpreter
 F Datasheets/STN1110.pdf
