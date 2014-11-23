@@ -47,12 +47,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MSP430F247 U7
+L MSP430F247 U11
 U 1 1 547269CD
 P 5400 3950
-F 0 "U7" H 5400 3980 30  0000 C CNN
+F 0 "U11" H 5400 3980 30  0000 C CNN
 F 1 "MSP430F247" H 5400 3920 30  0000 C CNN
-F 2 "" H 5400 3950 60  0000 C CNN
+F 2 "SMD_Packages:TQFP-64" H 5400 3950 60  0001 C CNN
 F 3 "" H 5400 3950 60  0000 C CNN
 	1    5400 3950
 	1    0    0    -1  
@@ -61,14 +61,14 @@ Text HLabel 2000 3200 0    60   Input ~ 0
 3.3V
 Text HLabel 4750 2400 1    60   Input ~ 0
 GND
-Text HLabel 6150 5800 3    60   BiDi ~ 0
-UART_TX
-Text HLabel 7350 4700 2    60   BiDi ~ 0
+Text HLabel 6150 5800 3    60   Output ~ 0
 UART_RX
-Text HLabel 7350 4600 2    60   BiDi ~ 0
-UART_TX_BT
-Text HLabel 7350 4500 2    60   BiDi ~ 0
+Text HLabel 7350 4700 2    60   Input ~ 0
+UART_TX
+Text HLabel 7350 4600 2    60   Input ~ 0
 UART_RX_BT
+Text HLabel 7350 4500 2    60   Output ~ 0
+UART_TX_BT
 Text HLabel 5050 2500 1    60   Output ~ 0
 WAKE_SW
 Text HLabel 4950 2500 1    60   Output ~ 0
@@ -130,23 +130,23 @@ NoConn ~ 4150 4200
 Text HLabel 7350 3600 2    60   Output ~ 0
 ~CS
 $Comp
-L CP1 10
+L CP1 U9
 U 1 1 5473ADF7
 P 2200 3400
-F 0 "10" H 2250 3500 50  0000 L CNN
+F 0 "U9" H 2250 3500 50  0000 L CNN
 F 1 "CP1" H 2250 3300 50  0000 L CNN
-F 2 "" H 2200 3400 60  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2200 3400 60  0001 C CNN
 F 3 "" H 2200 3400 60  0000 C CNN
 	1    2200 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L C 0.1
+L C U10
 U 1 1 5473B485
 P 2550 3400
-F 0 "0.1" H 2550 3500 40  0000 L CNN
+F 0 "U10" H 2550 3500 40  0000 L CNN
 F 1 "C" H 2556 3315 40  0000 L CNN
-F 2 "" H 2588 3250 30  0000 C CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 2588 3250 30  0001 C CNN
 F 3 "" H 2550 3400 60  0000 C CNN
 	1    2550 3400
 	1    0    0    -1  
@@ -170,8 +170,6 @@ Wire Wire Line
 	7350 4700 6650 4700
 Wire Wire Line
 	6650 4600 7350 4600
-Wire Wire Line
-	7350 4500 6650 4500
 Wire Wire Line
 	5050 2700 5050 2500
 Wire Wire Line
@@ -217,4 +215,6 @@ Text HLabel 5650 2500 1    60   BiDi ~ 0
 TDO/TDI
 Wire Wire Line
 	5650 2500 5650 2700
+Wire Wire Line
+	6650 4500 7350 4500
 $EndSCHEMATC
