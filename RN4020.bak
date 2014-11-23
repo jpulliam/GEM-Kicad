@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 10
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -47,10 +47,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RN4020 U3?
+L RN4020 U8
 U 1 1 5478E599
 P 5850 3750
-F 0 "U3?" H 5850 3750 60  0000 C BNN
+F 0 "U8" H 5850 3750 60  0000 C BNN
 F 1 "RN4020" H 5850 3750 60  0000 C TNN
 F 2 "" H 5850 3750 60  0000 C CNN
 F 3 "" H 5850 3750 60  0000 C CNN
@@ -146,4 +146,5 @@ Wire Wire Line
 Wire Wire Line
 	6650 3900 6650 3300
 Connection ~ 6650 3300
+Connection ~ 5150 3600
 $EndSCHEMATC

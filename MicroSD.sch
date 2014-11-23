@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 10
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -47,10 +47,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L microSD U4?
+L microSD U9
 U 1 1 547AAAD6
 P 5650 3000
-F 0 "U4?" H 5650 3000 60  0000 C TNN
+F 0 "U9" H 5650 3000 60  0000 C TNN
 F 1 "microSD" H 5650 3000 60  0000 C BNN
 F 2 "" H 5650 3000 60  0000 C CNN
 F 3 "" H 5650 3000 60  0000 C CNN
@@ -81,4 +81,6 @@ Text HLabel 4400 3100 0    60   3State ~ 0
 SPI_CLK
 Wire Wire Line
 	4950 3100 4400 3100
+Text Notes 6550 2300 2    60   ~ 0
+Might Need Pull Up Resistors Not Sure
 $EndSCHEMATC
