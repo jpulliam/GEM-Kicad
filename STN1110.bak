@@ -74,7 +74,7 @@ U 1 1 545FDE7C
 P 2700 3550
 F 0 "C1" H 2700 3650 40  0000 L CNN
 F 1 "30p" H 2706 3465 40  0000 L CNN
-F 2 "SMD_Packages:SMD-1206" H 2738 3400 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0805" H 2738 3400 30  0001 C CNN
 F 3 "" H 2700 3550 60  0000 C CNN
 	1    2700 3550
 	0    1    1    0   
@@ -85,7 +85,7 @@ U 1 1 545FDE7D
 P 2700 4150
 F 0 "C2" H 2700 4250 40  0000 L CNN
 F 1 "30p" H 2706 4065 40  0000 L CNN
-F 2 "SMD_Packages:SMD-1206" H 2738 4000 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0805" H 2738 4000 30  0001 C CNN
 F 3 "" H 2700 4150 60  0000 C CNN
 	1    2700 4150
 	0    1    1    0   
@@ -118,7 +118,7 @@ U 1 1 545FDE82
 P 2900 5050
 F 0 "C3" H 2900 5150 40  0000 L CNN
 F 1 "1u" H 2906 4965 40  0000 L CNN
-F 2 "SMD_Packages:SMD-1206" H 2938 4900 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0805" H 2938 4900 30  0001 C CNN
 F 3 "" H 2900 5050 60  0000 C CNN
 	1    2900 5050
 	1    0    0    -1  
@@ -129,7 +129,7 @@ U 1 1 545FDE85
 P 6950 2200
 F 0 "C4" H 6950 2300 40  0000 L CNN
 F 1 "1u" H 6956 2115 40  0000 L CNN
-F 2 "SMD_Packages:SMD-1206" H 6988 2050 30  0001 C CNN
+F 2 "SMD_Packages:SMD-0805" H 6988 2050 30  0001 C CNN
 F 3 "" H 6950 2200 60  0000 C CNN
 	1    6950 2200
 	1    0    0    -1  
@@ -226,20 +226,12 @@ Wire Wire Line
 Wire Wire Line
 	4250 4550 3250 4550
 Wire Wire Line
-	3250 4550 3250 5100
-Wire Wire Line
-	3250 5100 4100 5100
-Wire Wire Line
-	4100 5100 4100 4750
-Connection ~ 4100 4750
-Wire Wire Line
 	2900 4750 2900 4850
 Wire Wire Line
 	2900 5250 2900 5350
 Wire Wire Line
 	3250 4800 2900 4800
 Connection ~ 2900 4800
-Connection ~ 3250 4800
 Wire Wire Line
 	6950 1300 6950 1400
 Wire Wire Line
@@ -338,27 +330,8 @@ F 3 "" H 6450 5050 30  0000 C CNN
 	1    6450 5050
 	0    1    1    0   
 $EndComp
-$Comp
-L R R4
-U 1 1 545FDE92
-P 6450 5350
-F 0 "R4" V 6530 5350 40  0000 C CNN
-F 1 "100K" V 6457 5351 40  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 6380 5350 30  0001 C CNN
-F 3 "" H 6450 5350 30  0000 C CNN
-	1    6450 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6100 4750 6100 5350
 Wire Wire Line
 	6100 5050 6200 5050
-Connection ~ 6100 4750
-Wire Wire Line
-	6100 5350 6200 5350
-Connection ~ 6100 5050
-Wire Wire Line
-	6700 5350 7150 5350
 Wire Wire Line
 	6000 2950 6300 2950
 Wire Wire Line
@@ -409,10 +382,6 @@ Text HLabel 6300 2750 2    60   Output ~ 0
 ~ISO_K_TX
 Text HLabel 6300 2550 2    60   Output ~ 0
 ~ISO_L_TX
-Text HLabel 7150 5250 1    60   BiDi Italic 12
-3.3V
-Wire Wire Line
-	7150 5350 7150 5250
 Text HLabel 6950 5000 1    60   BiDi Italic 12
 5V_SW
 Wire Wire Line
@@ -441,4 +410,9 @@ Text HLabel 6950 2500 3    60   Input ~ 0
 GND
 Text HLabel 7500 4250 0    60   Input ~ 0
 GND
+Wire Wire Line
+	3250 4550 3250 4800
+Wire Wire Line
+	6100 5050 6100 4750
+Connection ~ 6100 4750
 $EndSCHEMATC

@@ -47,17 +47,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L JTAG_HEADER U14
-U 1 1 5474BF80
-P 5900 3400
-F 0 "U14" H 5900 3400 60  0000 C TNN
-F 1 "JTAG_HEADER" H 5900 3400 60  0000 C BNN
-F 2 "" H 5900 3400 60  0001 C CNN
-F 3 "" H 5900 3400 60  0000 C CNN
-	1    5900 3400
-	1    0    0    -1  
-$EndComp
-$Comp
 L JUMPER JP2
 U 1 1 5474DC6F
 P 2550 2750
@@ -88,10 +77,6 @@ Text HLabel 7950 3300 2    60   Output ~ 0
 TCK
 Wire Wire Line
 	6850 3300 7950 3300
-Text HLabel 3850 3300 0    60   Output ~ 0
-FUSE
-Wire Wire Line
-	4850 3300 3850 3300
 Text HLabel 7950 2700 2    60   BiDi ~ 0
 TDO/TDI
 Wire Wire Line
@@ -100,4 +85,27 @@ Text HLabel 7950 3500 2    60   Input ~ 0
 GND
 Wire Wire Line
 	7950 3500 6850 3500
+Text HLabel 7150 2900 2    60   Input ~ 0
+TDI/VPP
+$Comp
+L JTAG_HEADER U14
+U 1 1 5474BF80
+P 5900 3400
+F 0 "U14" H 5900 3400 60  0000 C TNN
+F 1 "JTAG_HEADER" H 5900 3400 60  0000 C BNN
+F 2 "" H 5900 3400 60  0001 C CNN
+F 3 "" H 5900 3400 60  0000 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2900 6850 2900
+Text HLabel 7150 3100 2    60   Input ~ 0
+TMS
+Wire Wire Line
+	6850 3100 7150 3100
+Text HLabel 4550 3300 0    60   Input ~ 0
+TEST/VPP
+Wire Wire Line
+	4550 3300 4850 3300
 $EndSCHEMATC
