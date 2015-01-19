@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name GEM_PCB)(type Github)(uri ${KIGITHUB}/GEM-Kicad.pretty)(options "")(descr "SD Prints"))
+  (lib (name GEM_PCB)(type KiCad)(uri ${KIPRJMOD}/GEM_PCB.pretty)(options "")(descr "SD Prints"))
 )

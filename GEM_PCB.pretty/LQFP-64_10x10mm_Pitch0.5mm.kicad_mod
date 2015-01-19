@@ -1,4 +1,4 @@
-(module Housings_QFP:LQFP-64_10x10mm_Pitch0.5mm (layer F.Cu) (tedit 54130A77)
+(module LQFP-64_10x10mm_Pitch0.5mm (layer F.Cu) (tedit 54130A77)
   (descr "64 LEAD LQFP 10x10mm (see MICREL LQFP10x10-64LD-PL-1.pdf)")
   (tags "QFP 0.5")
   (attr smd)
