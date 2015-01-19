@@ -5,6 +5,18 @@ D CAN Transceiver
 F Datasheets/MCP2551.pdf
 $ENDCMP
 #
+$CMP MMBT3640
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP MMBT3646
+F transistors/bipolar/*.*
+$ENDCMP
+#
+$CMP MOSFET_P
+F transistors/mos/*.*
+$ENDCMP
+#
 $CMP RN4020
 D Bluetooth Module
 $ENDCMP
@@ -12,6 +24,10 @@ $ENDCMP
 $CMP STN1110
 D OBD-II to Serial Interpreter
 F Datasheets/STN1110.pdf
+$ENDCMP
+#
+$CMP ZXMP6A13F
+F transistors/mos/*.*
 $ENDCMP
 #
 #End Doc Library
