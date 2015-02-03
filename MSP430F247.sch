@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 8 12
 Title ""
 Date ""
 Rev ""
@@ -47,7 +47,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2000 3200 0    60   Input ~ 0
-3.3V
+VCC/TOOL
 Text HLabel 4750 2400 1    60   Input ~ 0
 GND
 Text HLabel 6150 5800 3    60   Output ~ 0
@@ -121,83 +121,27 @@ Text HLabel 2200 3900 3    60   Input ~ 0
 GND
 Text HLabel 2550 3900 3    60   Input ~ 0
 GND
-Wire Wire Line
-	4650 2700 4650 2500
-Wire Wire Line
-	4750 2400 4750 2700
-Wire Wire Line
-	4850 2700 4850 2500
-Wire Wire Line
-	4850 2500 4750 2500
-Connection ~ 4750 2500
-Wire Wire Line
-	6150 5800 6150 5200
-Wire Wire Line
-	7350 4700 6650 4700
-Wire Wire Line
-	6650 4600 7350 4600
-Wire Wire Line
-	5050 2700 5050 2500
-Wire Wire Line
-	4950 2700 4950 2500
-Wire Wire Line
-	4150 3300 3600 3300
-Wire Wire Line
-	4150 3400 3600 3400
-Wire Wire Line
-	7350 3500 6650 3500
-Wire Wire Line
-	7350 3400 6650 3400
-Wire Wire Line
-	7350 3300 6650 3300
-Wire Wire Line
-	6650 3600 7350 3600
-Wire Wire Line
-	2000 3200 4150 3200
-Connection ~ 2200 3200
-Connection ~ 2550 3200
-Wire Wire Line
-	3600 3200 3600 2500
-Wire Wire Line
-	3600 2500 4650 2500
-Connection ~ 3600 3200
-Wire Wire Line
-	2200 3600 2200 3900
-Wire Wire Line
-	2550 3600 2550 3900
-Wire Wire Line
-	5250 1600 5250 2700
 Text HLabel 5250 1050 1    60   Input ~ 0
-3.3V
+VCC/TOOL
 Text HLabel 5350 2500 1    60   Input ~ 0
 TCK
-Wire Wire Line
-	5350 2500 5350 2700
 Text HLabel 5650 2500 1    60   BiDi ~ 0
 TDO/TDI
-Wire Wire Line
-	5650 2500 5650 2700
-Wire Wire Line
-	6650 4500 7350 4500
 $Comp
 L MSP430F247 U11
 U 1 1 547269CD
 P 5400 3950
 F 0 "U11" H 5400 3980 30  0000 C CNN
 F 1 "MSP430F247" H 5400 3920 30  0000 C CNN
-F 2 "SMD_Packages:TQFP-64" H 5400 3950 60  0001 C CNN
+F 2 "GEM:LQFP_64PIN_MSP430" H 5400 3950 60  0001 C CNN
 F 3 "" H 5400 3950 60  0000 C CNN
 	1    5400 3950
 	1    0    0    -1  
 $EndComp
 Text HLabel 5450 2500 1    60   Input ~ 0
 TMS
-Wire Wire Line
-	5450 2700 5450 2500
 Text HLabel 5550 2500 1    60   Input ~ 0
 TDI/VPP
-Wire Wire Line
-	5550 2500 5550 2700
 $Comp
 L R R4
 U 1 1 54763D43
@@ -209,12 +153,8 @@ F 3 "" H 5250 1350 30  0000 C CNN
 	1    5250 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 1100 5250 1050
-Text HLabel 5450 1600 2    60   Input ~ 0
+Text HLabel 5450 1650 2    60   Input ~ 0
 ~RST
-Wire Wire Line
-	5450 1600 5250 1600
 $Comp
 L C C18
 U 1 1 547688E6
@@ -226,20 +166,15 @@ F 3 "" H 5550 1800 60  0000 C CNN
 	1    5550 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5250 1800 5350 1800
-Connection ~ 5250 1800
 Text HLabel 5850 1800 2    60   Input ~ 0
 GND
-Wire Wire Line
-	5850 1800 5750 1800
 $Comp
 L C C20
 U 1 1 547811D1
 P 2550 3400
 F 0 "C20" H 2550 3500 40  0000 L CNN
 F 1 "0.1U" H 2556 3315 40  0000 L CNN
-F 2 "" H 2588 3250 30  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2588 3250 30  0001 C CNN
 F 3 "" H 2550 3400 60  0000 C CNN
 	1    2550 3400
 	1    0    0    -1  
@@ -250,9 +185,75 @@ U 1 1 54781237
 P 2200 3400
 F 0 "C19" H 2250 3500 50  0000 L CNN
 F 1 "10U" H 2250 3300 50  0000 L CNN
-F 2 "" H 2200 3400 60  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2200 3400 60  0001 C CNN
 F 3 "" H 2200 3400 60  0000 C CNN
 	1    2200 3400
 	1    0    0    -1  
 $EndComp
+Connection ~ 5250 1650
+Wire Wire Line
+	5450 1650 5250 1650
+Wire Wire Line
+	5850 1800 5750 1800
+Connection ~ 5250 1800
+Wire Wire Line
+	5250 1800 5350 1800
+Wire Wire Line
+	5250 1100 5250 1050
+Wire Wire Line
+	5550 2500 5550 2700
+Wire Wire Line
+	5450 2700 5450 2500
+Wire Wire Line
+	6650 4500 7350 4500
+Wire Wire Line
+	5650 2500 5650 2700
+Wire Wire Line
+	5350 2500 5350 2700
+Wire Wire Line
+	5250 1600 5250 2700
+Wire Wire Line
+	2550 3600 2550 3900
+Wire Wire Line
+	2200 3600 2200 3900
+Connection ~ 3600 3200
+Wire Wire Line
+	3600 2500 4650 2500
+Wire Wire Line
+	3600 3200 3600 2500
+Connection ~ 2550 3200
+Connection ~ 2200 3200
+Wire Wire Line
+	2000 3200 4150 3200
+Wire Wire Line
+	6650 3600 7350 3600
+Wire Wire Line
+	7350 3300 6650 3300
+Wire Wire Line
+	7350 3400 6650 3400
+Wire Wire Line
+	7350 3500 6650 3500
+Wire Wire Line
+	4150 3400 3600 3400
+Wire Wire Line
+	4150 3300 3600 3300
+Wire Wire Line
+	4950 2700 4950 2500
+Wire Wire Line
+	5050 2700 5050 2500
+Wire Wire Line
+	6650 4600 7350 4600
+Wire Wire Line
+	7350 4700 6650 4700
+Wire Wire Line
+	6150 5800 6150 5200
+Connection ~ 4750 2500
+Wire Wire Line
+	4850 2500 4750 2500
+Wire Wire Line
+	4850 2700 4850 2500
+Wire Wire Line
+	4750 2400 4750 2700
+Wire Wire Line
+	4650 2500 4650 2700
 $EndSCHEMATC

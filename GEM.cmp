@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-11-02 BZR 5250)-product   date = 11/26/2014 2:40:54 PM
+Cmp-Mod V01 Created by Cvpcb (2014-11-02 BZR 5250)-product   date = 1/22/2015 8:25:18 PM
 
 BeginCmp
 TimeStamp = /545FD699/545FDE7C;
@@ -284,6 +284,13 @@ BeginCmp
 TimeStamp = /5468ADD8/5468BD7F;
 Reference = L1;
 ValeurCmp = 47u;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5468ADD8/5468D250;
+Reference = L2;
+ValeurCmp = 33U;
 IdModule  = ;
 EndCmp
 
@@ -750,13 +757,6 @@ IdModule  = SMD_Packages:SOT-23-6;
 EndCmp
 
 BeginCmp
-TimeStamp = /5468ADD8/5468D250;
-Reference = U8;
-ValeurCmp = 33U;
-IdModule  = ;
-EndCmp
-
-BeginCmp
 TimeStamp = /546F8CA0/547269CD;
 Reference = U11;
 ValeurCmp = MSP430F247;
@@ -767,7 +767,7 @@ BeginCmp
 TimeStamp = /5478DA1E/5478E599;
 Reference = U12;
 ValeurCmp = RN4020;
-IdModule  = ;
+IdModule  = GEM:RN4020_BT;
 EndCmp
 
 BeginCmp

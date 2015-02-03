@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 10 12
 Title ""
 Date ""
 Rev ""
@@ -52,7 +52,7 @@ U 1 1 547AAAD6
 P 5650 3000
 F 0 "U13" H 5650 3000 60  0000 C TNN
 F 1 "microSD" H 5650 3000 60  0000 C BNN
-F 2 "" H 5650 3000 60  0001 C CNN
+F 2 "GEM:MicroSD_Slot" H 5650 3000 60  0001 C CNN
 F 3 "" H 5650 3000 60  0000 C CNN
 	1    5650 3000
 	1    0    0    -1  
