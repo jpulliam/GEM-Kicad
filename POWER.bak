@@ -449,7 +449,6 @@ Wire Wire Line
 Wire Wire Line
 	9950 1650 9950 1900
 Connection ~ 9950 1750
-Connection ~ 8850 1750
 Wire Wire Line
 	9550 1150 10500 1150
 Wire Wire Line
@@ -496,7 +495,6 @@ Wire Wire Line
 Wire Wire Line
 	9950 4300 9950 4550
 Connection ~ 9950 4400
-Connection ~ 8850 4400
 Wire Wire Line
 	9550 3800 10550 3800
 Wire Wire Line

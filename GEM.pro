@@ -1,4 +1,4 @@
-update=11/15/2014 11:54:38 PM
+update=1/30/2015 8:44:40 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -27,19 +27,6 @@ BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=../My Contributions/Schematics/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -76,3 +63,16 @@ LibName29=contrib
 LibName30=valves
 LibName31=GEM
 LibName32=msp430
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=../My Contributions/Schematics/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+RptD_X=0
+RptD_Y=100
+RptLab=1
+LabSize=60
