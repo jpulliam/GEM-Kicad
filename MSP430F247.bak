@@ -46,6 +46,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+<<<<<<< HEAD
+=======
+$Comp
+L MSP430F247 U7
+U 1 1 547269CD
+P 5400 3950
+F 0 "U7" H 5400 3980 30  0000 C CNN
+F 1 "MSP430F247" H 5400 3920 30  0000 C CNN
+F 2 "GEM_PCB:LQFP-64_10x10mm_Pitch0.5mm" H 5400 6150 60  0000 C CNN
+F 3 "" H 5400 3950 60  0000 C CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
+>>>>>>> Pedro-MCU
 Text HLabel 2000 3200 0    60   Input ~ 0
 VCC/TOOL
 Text HLabel 4750 2400 1    60   Input ~ 0

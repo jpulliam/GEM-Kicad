@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 update=1/25/2015 11:22:30 PM
+=======
+update=1/30/2015 8:44:40 PM
+>>>>>>> Pedro-MCU
 version=1
 last_client=kicad
 [cvpcb]
@@ -57,6 +61,7 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
+<<<<<<< HEAD
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -77,3 +82,5 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
+=======
+>>>>>>> Pedro-MCU

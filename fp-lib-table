@@ -1,3 +1,7 @@
 (fp_lib_table
+<<<<<<< HEAD
   (lib (name GEM)(type KiCad)(uri ${KIPRJMOD}/GEM.pretty)(options "")(descr ""))
+=======
+  (lib (name GEM_PCB)(type KiCad)(uri ${KIPRJMOD}/GEM_PCB.pretty)(options "")(descr "SD Prints"))
+>>>>>>> Pedro-MCU
 )
